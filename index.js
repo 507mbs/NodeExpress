@@ -12,3 +12,11 @@ sdk.auth('rnd_uUxYad...');
 sdk.getServices({limit: '20'})
   .then(({ data }) => console.log(data))
   .catch(err => console.error(err));
+
+  app.get('/',(req,res)=>{
+    res.send('hello world')
+})
+app.listen(port,()=>{
+    console.log(`app listening on http://localhost:${port}`)
+})
+console.log("hi")
